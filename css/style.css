@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+.retrato {
+    margin-top: 45px;
+    color: black;
+    width: 200px;
+    border-radius: 200px;
+    border: 2px solid #eeeeee;
+  }
+  .icone {
+    width: 15px;
+  }
+  body {
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .segundoH{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  h1 {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 40px;
+    text-decoration: dashed;
+    background: rgba(0, 0, 0, 0.442);
+    border-radius: 20px;
+
+  }
+
+  h2 {
+    margin-top: 10px;
+    font-size: 32px;
+    font-weight: normal;
+    background: rgba(0, 0, 0, 0.442);
+    border-radius: 20px;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+    background: rgba(180, 170, 170, 0.842);
+    width: 130px;
+    height: 50px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+  }
