@@ -7,6 +7,11 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+
+    <link
+    href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400&display=swap"
+    rel="stylesheet"
+  />
     
     <title>Cleiver Coelho</title>
 
@@ -18,20 +23,91 @@
     
   </head>
   <body>
-    <img src="./img/retrato.jpg" alt="Imagem de Perfil" class="retrato" />
-    <h1>Cleiver Coelho</h1>
-    <h2>Engenharia Elétrica - UFMG</h2>
-    <h2 class="segundoH">Dev Full-Stack - Driven :)</h2>
+    <div class="site">
+      <img src="./img/retrato.jpg" alt="Imagem de Perfil" class="retrato" />
+      <h1>Cleiver Coelho</h1>
+      <h2>Engenharia Elétrica - UFMG</h2>
+      <h2 class="segundoH">Dev Full-Stack - Driven</h2>
 
-    <a href="https://www.linkedin.com/in/cleiver-coelho-398a49211/">
-      <img src="./img/linkedin_logo.png" alt="Icone" class="icone" />
-      LinkedIn
-    </a>
-    <br />
-    <a href="https://github.com/CleiverCoelho">
-      <img src="./img/github_logo.png" alt="Icone" class="icone" />
-      GitHub
-    </a>
-    <br />
+      <a class="botao" href="https://www.linkedin.com/in/cleiver-coelho-398a49211/">
+        <ion-icon class="icone" name="logo-linkedin"></ion-icon>
+        <p>LinkedIn</p>
+      </a>
+      <br />
+      <a class="botao" href="https://github.com/CleiverCoelho">
+        <ion-icon class="icone" name="logo-github"></ion-icon>        
+        <p>Github</p>
+      </a>
+
+      <div onclick="openSidebar()" class="trabalhos">
+          <h3>Conheça meus projetos</h3>
+      </div>
+
+      <div class="sidebar">
+        <div>
+          <ion-icon onclick="toggleSidebar()" class="icone" name="reorder-three-outline"></ion-icon> 
+        </div>
+        <div class="projetos escondido">
+          <div class="projeto">
+            <h2>Parrot Card game</h2>
+            <div class="descricao">
+              <div>
+                <img src="./img/parrots.png" alt="ParrotsGame">
+              </div>
+              <p>
+                Jogo de memória customizado para pratica em manipulação do DOM com JavaScript
+                e prática de métodos em CSS
+              </p>
+            </div>
+            <a href="https://cleivercoelho.github.io/ParrotsCardGame/">
+              <h3>Clique Aqui</h3>  
+            </a>
+          </div>
+          
+          <!-- Fim da div primeiro Projeto -->
+          <div class="projeto">
+            <h2>Bate-Papo Uol</h2>
+            <div class="descricao">
+              <div>
+                <img src="./img/bate-papo.jpg" alt="BatePapoUol">
+              </div>
+              <p>
+                Interface do App Bate-Papo Uol para envio de mensagens públicas e privadas
+                para prática de manipulação de Api's utilizando Axios
+              </p>
+            </div>
+            <a href="https://cleivercoelho.github.io/projeto5-batepapouolHub/">
+              <h3>Clique Aqui</h3>  
+            </a>
+          </div>
+          
+          <!-- Fim da div segundo Projeto -->
+          <div class="projeto">
+            <h2>DrivenEats</h2>
+            <div class="descricao">
+              <div>
+                <img src="./img/driveneats.jpg" alt="driveneats">
+              </div>
+              <p>
+                Projeto que simula a interface mobile para o site de um 
+                restaurante. Escolha de produtos e envio para o Whatsapp
+              </p>
+            </div>
+            <a href="https://cleivercoelho.github.io/DrivenEats/">
+              <h3>Clique Aqui</h3>  
+            </a>
+          </div>
+          
+          <!-- Fim da div terceiro Projeto -->
+        </div>
+
+        <div onclick="closeSidebar()" class="overlay escondido"></div>
+
+      </div>
+    </div>
+
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script> 
+    <script src="./script/script.js"></script>
   </body>
 </html>
