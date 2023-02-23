@@ -120,6 +120,7 @@ a:hover{
   top: 10px;
   left: 10px;
   transition: all .3s linear;
+  overflow-y: scroll;
 }
 
 .sidebar ion-icon{
