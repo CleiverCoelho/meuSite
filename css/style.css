@@ -49,6 +49,10 @@ h2 {
   border-radius: 20px;
 }
 
+.title {
+  margin-bottom: 20px;
+}
+
 a {
   color: white;
   text-decoration: none;
@@ -243,6 +247,14 @@ a:hover{
   .sidebar.sidebar.opened{
     width: 90%;
     overflow-y: scroll;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 26px;
   }
 
   .overlay.active{
