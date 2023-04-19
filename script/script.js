@@ -1,40 +1,29 @@
-function toggleSidebar(){
-    const sideTouch = document.querySelector(".sidebar");
+const nextBtn = document.querySelector('#next-btn');
+const container = document.querySelector('.container-frames');
 
-    sideTouch.classList.toggle("opened")
+nextBtn.addEventListener('click', () => {
 
-    const projetosOpen = document.querySelector(".projetos");
-    projetosOpen.classList.toggle("escondido");
+    const boxes = document.querySelectorAll('.projeto');
+    const firstBox = boxes[0];
+    firstBox.classList.add('active');
+    setTimeout(() => {
+    firstBox.remove();
+    container.appendChild(firstBox);
+    firstBox.classList.remove('active');
+    }, 500);
 
-    const overlay = document.querySelector(".overlay");
-    overlay.classList.toggle("escondido");
-    overlay.classList.toggle("active")
+    const fechar = document.querySelectorAll(".projeto");
+    for(let i = 0; i < fechar.length; i++){
+        fechar[i].classList.add("conteudo-escondido")
+    }
+});
 
-}
 
-function closeSidebar(){
-    const sideTouch = document.querySelector(".sidebar");
-
-    sideTouch.classList.remove("opened")
-
-    const projetosOpen = document.querySelector(".projetos");
-    projetosOpen.classList.add("escondido");
-
-    const overlay = document.querySelector(".overlay");
-    overlay.classList.add("escondido");
-    overlay.classList.remove("active")
-
-}
-
-function openSidebar(){
-    const sideTouch = document.querySelector(".sidebar");
-
-    sideTouch.classList.add("opened")
-
-    const projetosOpen = document.querySelector(".projetos");
-    projetosOpen.classList.remove("escondido");
-
-    const overlay = document.querySelector(".overlay");
-    overlay.classList.add("active")
-    overlay.classList.remove("escondido");
+function verMais(botao){
+    botao.classList.remove("conteudo-escondido");
+    botao.classList.add("abrir")
+    setTimeout(() => {
+        botao.classList.remove("abrir")
+        botao.classList.add("conteudo-escondido")
+    }, 10000)
 }

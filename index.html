@@ -22,7 +22,7 @@
     </style>
     
   </head>
-  <body>
+  <body >
     <div class="site">
       <img src="./img/retrato.jpg" alt="Imagem de Perfil" class="retrato" />
       <h1>Cleiver Coelho</h1>
@@ -38,16 +38,11 @@
         <p>Github</p>
       </a>
 
-      <div onclick="openSidebar()" class="trabalhos">
-          <h3>Conheça meus projetos</h3>
-      </div>
+      <h2 class="title projetos-title">Conheça meus projetos!</h2>
 
-      <div class="sidebar">
-        <div>
-          <ion-icon onclick="toggleSidebar()" class="icone" name="reorder-three-outline"></ion-icon> 
-        </div>
-        <div class="projetos escondido">
-          <div class="projeto">
+      <div class="containers">
+        <div class="container-frames">
+          <div onclick="verMais(this)" class="projeto projeto-animacao conteudo-escondido">
             <h2>Parrot Card game</h2>
             <div class="descricao">
               <div>
@@ -58,13 +53,14 @@
                 e prática de métodos em CSS
               </p>
             </div>
+            <button>ver mais</button>
             <a href="https://cleivercoelho.github.io/ParrotsCardGame/">
               <h3>Clique Aqui</h3>  
             </a>
           </div>
           
           <!-- Fim da div primeiro Projeto -->
-          <div class="projeto">
+          <div onclick="verMais(this)" class="projeto projeto-animacao conteudo-escondido">
             <h2>Bate-Papo Uol</h2>
             <div class="descricao">
               <div>
@@ -75,13 +71,14 @@
                 para prática de manipulação de Api's utilizando Axios
               </p>
             </div>
+            <button>ver mais</button>
             <a href="https://cleivercoelho.github.io/projeto5-batepapouolHub/">
               <h3>Clique Aqui</h3>  
             </a>
           </div>
           
           <!-- Fim da div segundo Projeto -->
-          <div class="projeto">
+          <div onclick="verMais(this)" class="projeto projeto-animacao conteudo-escondido">
             <h2>DrivenEats</h2>
             <div class="descricao">
               <div>
@@ -92,13 +89,14 @@
                 restaurante. Escolha de produtos e envio para o Whatsapp
               </p>
             </div>
+            <button>ver mais</button>
             <a href="https://cleivercoelho.github.io/DrivenEats/">
               <h3>Clique Aqui</h3>  
             </a>
           </div>
           
           <!-- Fim da div terceiro Projeto -->
-          <div class="projeto">
+          <div onclick="verMais(this)" class="projeto projeto-animacao conteudo-escondido">
             <h2>Jogo da Forca</h2>
             <div class="descricao">
               <div>
@@ -109,6 +107,7 @@
                 componentização, controle de estados, eventos e deploy.
               </p>
             </div>
+            <button>ver mais</button>
             <a href="https://projeto8-jogoforca-cleivercoelho.vercel.app/">
               <h3>Clique Aqui</h3>  
             </a>
@@ -116,7 +115,7 @@
           <!-- Fim da div terceiro Projeto -->
 
 
-          <div class="projeto">
+          <div onclick="verMais(this)" class="projeto projeto-animacao conteudo-escondido">
             <h2>Cineflex</h2>
             <div class="descricao">
               <div>
@@ -130,11 +129,12 @@
             <a href="https://projeto10-cineflex-theta-five.vercel.app/">
               <h3>Clique Aqui</h3>  
             </a>
+            <button>ver mais</button>
           </div>
           
           <!-- Fim da div quarto Projeto -->
 
-          <div class="projeto">
+          <div onclick="verMais(this)" class="projeto projeto-animacao conteudo-escondido">
             <h2>TrackIt</h2>
             <div class="descricao">
               <div>
@@ -145,13 +145,14 @@
                 como lembretes personalizados e diários.
               </p>
             </div>
+            <button>ver mais</button>
             <a href="https://projeto11-trackit-murex-gamma.vercel.app/">
               <h3>Clique Aqui</h3>  
             </a>
           </div>
           
           <!-- Fim da div quinto Projeto -->
-          <div class="projeto">
+          <div onclick="verMais(this)" class="projeto projeto-animacao conteudo-escondido">
             <h2>Calculadora IMC</h2>
             <div class="descricao">
               <div>
@@ -162,19 +163,20 @@
                 Corporal e exibe a faixa em que o indice se encaixa.
               </p>
             </div>
-            <a href="https://calculadora-holpi19y7-cleivercoelho.vercel.app/">
+            <button>ver mais</button>
+            <a href="https://calculadora-imc-git-main-cleivercoelho.vercel.app/">
               <h3>Clique Aqui</h3>  
             </a>
           </div>
-          
-          <!-- Fim da div sexto Projeto -->
-          
+
         </div>
 
-        <div onclick="closeSidebar()" class="overlay escondido"></div>
-
       </div>
-    </div>
+      <button id="next-btn">Próxima</button>
+
+        <!-- <div onclick="closeSidebar()" class="overlay escondido"></div> -->
+
+      <!-- </div> -->
 
 
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script> 
