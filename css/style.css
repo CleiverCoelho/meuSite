@@ -243,6 +243,16 @@ a:hover{
 .projeto.abrir button{
   opacity: 0;
 }
+.projeto button{
+  border: none;
+  text-decoration: underline;
+  position: absolute;
+  top: 210px;
+  left: 80px;
+}
+.projeto.abrir button{
+  opacity: 0;
+}
 
 @media(max-width: 1200px){
   #next-btn {
@@ -275,6 +285,13 @@ a:hover{
     width: 150px;
     height: 250px;
     /* background: rgba(253, 247, 247, 0.5); */
+  }
+  .projeto button{
+    top: 210px;
+    left: 50px;
+  }
+  .projeto.abrir button{
+    opacity: 0;
   }
 
 }
