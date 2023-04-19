@@ -235,6 +235,7 @@ a:hover{
 }
 .projeto button{
   border: none;
+  background-color: rgb(80, 80, 94, 0.8);
   text-decoration: underline;
   position: absolute;
   top: 210px;
