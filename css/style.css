@@ -13,7 +13,7 @@
 }
 
 .containers {
-  width: 450px;
+  width: 550px;
   overflow-x: hidden;
 }
 
@@ -183,16 +183,13 @@ a:hover{
 }
 
 #next-btn {
-  margin-top: 20px;
+  margin-top: -300px;
   padding: 10px 20px;
   font-size: 18px;
   font-weight: bold;
   color: white;
   background-color: blue;
   border: none;
-  position: absolute;
-  top: 800px;
-  left: 1500px;
   border-radius: 5px;
   cursor: pointer;
 }
